@@ -38,15 +38,7 @@ except Exception as e:
 When to stick with the Google Cloud Project:
 You should only continue with the YouTube Data API v3 if:
 
-Privacy: Your videos are "Private" (not "Unlisted"). Community libraries can't see Private videos; the Official API can if you use your OAuth credentials.
 
-Metadata: You need to pull complex stats (like specific view counts, tags, or comment moderation) alongside the transcript in a single authenticated session.
-
-My recommendation: Try the youtube-transcript-api first. It works for Public and Unlisted videos and will save you hours of configuration in the Google Cloud Console.
-
-client id 1074388284320-996dcoplkdo1r8hcifqj0e26t2p4dat1.apps.googleusercontent.com
-
-Key=AIzaSyBMYm8fOAMyJuX6RPauUDnEITyXuIj5j6c  (youtube api key)
 
 
 python extract_transcripts.py --channel @MachiningCloud --output-dir ./transcripts --use-whisper-fallback
